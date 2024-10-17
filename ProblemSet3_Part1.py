@@ -57,4 +57,3 @@ userNumbers.sort(reverse = True)
 
 # Step 4: Print the highest value of userNumbers
 print(userNumbers)
-
