@@ -31,7 +31,7 @@ print(mmsi_idx,name_idx,fleet_idx)
 #Create an empty dictionary
 vesselDict = {}
 #Iterate through all lines (except the header) in the data file:
-for lineString in lineList:
+for lineString in lineList[1:]:
     # Check if line is data line
     if lineString[0] in ("#","u"):
         continue
@@ -50,6 +50,7 @@ for lineString in lineList:
 
 # Print the vesselDict to check the contents
 print(vesselDict)
+len(vesselDict)
 
 #%% Task 4.4
 # Step 1: Assign string value to vesselID
